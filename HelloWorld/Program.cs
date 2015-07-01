@@ -1,15 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HelloWorld
+class Program
 {
-    class Program
+    static UInt32 Getnum()
     {
-        static void Main(string[] args)
+        UInt32 input = 0;
+        input = (UInt32)Console.Read();
+        return input;
+    }
+
+    static void Main(string[] args)
+    {
+        UInt32 input = 1;
+
+        Console.WriteLine("Hello World");
+        while (input != 0)
         {
+            input = Program.Getnum();
+            Console.WriteLine("The number is %d ", input);
         }
     }
+
+
+
 }
